@@ -1,24 +1,20 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400&amp;lang=en">
-        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&amp;lang=en">
+    <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="Personal Portfolio Website">
+        <meta name="keywords" content="Portfolio, Web designer, UI/UX, Digital designer">
         <title>Reena Rani - Portfolio Website</title>
         <!-- Favicon -->
-        <link href="images/favicon.icon" rel="ico">
+		 <link rel="icon" type="image/png" href="images/favicon.ico" />
         <!-- Fonts/Icons -->
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-        <link href="css/all.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- CSS -->
-        <link href="css/theme.min.css" rel="stylesheet">
-        <!-- Link Swiper's CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="css/theme.min.css" rel="stylesheet" />
     </head>
-    <body data-preloader="true" class="loaded">
+    <body>
         <!-- Cursor -->
         <div id="cursor" style="left: 375px; top: 1939px;" class=""></div>
         <!-- end Cursor -->
@@ -28,34 +24,37 @@
                 <div class="header-wrapper">
                     <!-- Header Logo -->
                     <div class="header-logo">
-                        <h2>Reena Rani</h2>
+                        <a href="index.html">
+							<img src="images/logo.jpg" Class="img-fluid logo" alt="Logo" />
+						</a>
                     </div>
                     <!-- Header Nav -->
                     <div class="header-nav">
-                        <a class="button button-sm button-dot me-2 me-lg-3" href="#contact">
-                        <span data-text="Let's Talk">Let's Talk</span>
+                        <a class="button button-sm button-dot me-2 me-lg-3" href="images/Reena-Rani-CV.pdf" target="_blank">
+                            <span data-text="Download CV">Download CV</span>
                         </a>
                         <!-- Nav Menu Toggle -->
                         <button id="nav-toggle" class="button button-sm button-dot button-white">
-                        <span data-text="Menu">Menu</span>
+                            <span data-text="Menu">Menu</span>
                         </button>
                         <!-- Nav Menu Box -->
                         <div class="nav-box">
                             <ul class="nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#about"><i class="bi bi-arrow-right"></i>About</a>
-                                </li>
+                                    <a class="nav-link active" href="index.html">
+                                        <i class="bi bi-arrow-right"></i>Home </a>
+                                </li> 
+								<li class="nav-item">
+                                    <a class="nav-link" href="#about">
+                                        <i class="bi bi-arrow-right"></i>About </a>
+                                </li> 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#services"><i class="bi bi-arrow-right"></i>Services</a>
-                                </li>
+                                    <a class="nav-link" href="#portfolio">
+                                        <i class="bi bi-arrow-right"></i>Portfolio </a>
+                                </li> 
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#portfolio"><i class="bi bi-arrow-right"></i>Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#awards"><i class="bi bi-arrow-right"></i>Awards</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact"><i class="bi bi-arrow-right"></i>Contact</a>
+                                    <a class="nav-link" href="#contact">
+                                        <i class="bi bi-arrow-right"></i>Contact </a>
                                 </li>
                             </ul>
                         </div>
@@ -67,473 +66,408 @@
             <!-- end container -->
         </div>
         <!-- end Header -->
-        <main data-bs-spy="scroll" data-bs-target=".nav-box">
+        <main>
             <!-- Hero section -->
-            <div id="about" class="hero-section">
+            <section class="hero-section">
                 <div class="container text-center">
                     <div class="row">
-                        <div class="col-12">
-                            <h1 class="hero-heading display-1 fw-bold mb-0 stroke-text">Reena Rani</h1>
-                            <p>Web Designer | UI/UX Designer | Digital Designer</p>
+                        <div class="col-10 offset-1">
+                            <h1 class="hero-heading display-1 fw-bold mb-0">Hi, I am <span id="message" Class="text-gradient"></span><span class="cursor"></span></h1>
+                            <p>With over 7 years of experience in web and graphic design, coupled with a relentless drive for excellence, I bring a versatile skill set to the table. Proficient in HTML, CSS, WordPress, Photoshop, and UI/UX Design, I specialize in creating visually stunning and intuitively navigable digital solutions, I specialize in creating visually stunning and intuitively navigable digital solutions.</p>
                         </div>
                     </div>
                     <!-- end row -->
                 </div>
                 <!-- end container -->
-            </div>
+            </section>
             <!-- end Hero section -->
             <!-- About section -->
-            <div class="container">
-                <div class="row g-4 g-md-5">
-                    <div class="col-12 col-lg-4 order-lg-2 text-center">
-                        <!-- Hero Avatar -->
+            <section id="about" class="container">
+                <div class="row g-4 align-items-center">
+                    <div Class="col-sm-6">
+                        <!-- About Avatar -->
                         <div class="hero-avatar">
-                            <img src="images/about.jpg" data-rjs="2" alt="">
+                            <img src="images/about-img.jpg" Class="img-fluid" alt="About Image"/>
                         </div>
-                        <!-- end Hero Avatar -->
+                        <!-- end About Avatar -->
                     </div>
-                    <div class="col-12 col-lg-4 order-lg-1">
-                        <div class="row g-4 g-lg-5">
-                           
-                            <div class="col-6 col-md-4 col-lg-12">
-                                <h6 class="sm-heading">Bio</h6>
-                                <p>Hi, there!</br>
-								Reena is here! With more than 6+ years of experince, I'm ready to make your ideas come alive! I believe that design has the power to make a difference in the world. I strive to create designs that are not only aesthetically pleasing but also communicate a message and evoke emotions.
-</p>
-                            </div>
-                        </div>
-                        <!-- end row(inner) -->
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-4 order-lg-3 text-lg-end">
-                        <div class="row g-4 g-lg-5">
-                           
-                            <div class="col-6 col-md-4 col-lg-12">
-                                <h6 class="sm-heading">Skills</h6>
-                                <ul class="list-inline-dot">
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>Bootstrap</li>
-                                    <li>jQuery</li>
-                                    <li>Responsive Design</li>
-									<li>UI/UX</li>
-									<li>SCSS</li>
-									<li>ReactJS</li>
-									<li>User Personas</li>
-                                    <li>WordPress</li>
-									<li>Shopify</li>
-                                    <li>Figma</li>
-									<li>Photoshop</li>
-									<li>Slack</li>
-									<li>Miro</li>
-									<li>Github</li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-12">
-                                <h6 class="sm-heading">Connect</h6>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a class="button-circle button-circle-sm" href="https://www.facebook.com/profile.php?id=100037676436189">
-                                        <i class="bi bi-facebook"></i>
-                                        <i class="bi bi-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="button-circle button-circle-sm" href="https://twitter.com/Reena3041">
-                                        <i class="bi bi-twitter"></i>
-                                        <i class="bi bi-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="button-circle button-circle-sm" href="https://www.linkedin.com/in/ranireena/">
-                                        <i class="bi bi-linkedin"></i>
-                                        <i class="bi bi-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- end row(inner) -->
+                    <div class="col-12 col-lg-6">
+                        <h2 class="display-6 fw-medium mb-0">About <span class="text-gradient">me</span></h2>
+                        <p>As a seasoned web and graphic designer currently pursuing an MSc in UX Design, I'm on a mission to blend aesthetic brilliance with user-centric functionality. From sleek websites to engaging interfaces, my passion lies in crafting digital experiences that captivate and inspire. With a keen eye for detail and a knack for innovation, I thrive in collaborative environments where creativity knows no bounds. Let's embark on a journey of design excellence together, where every pixel tells a story and every click sparks delight.</p> 
                     </div>
                 </div>
                 <!-- end row -->
-            </div>
+            </section>
             <!-- end container -->
             <!-- end About section -->
-            <!-- Services section -->
-            <div id="services" class="section">
+            <!-- Employement section -->
+            <section class="section">
                 <div class="container">
                     <div class="row g-4 g-xl-5">
                         <div class="col-12 col-xl-5">
-                            <span class="title-heading text-white-04">Experince</span>
-                            <h1 class="display-6 fw-medium mb-0">Employement <span class="text-gradient">History</span></h1>
+                            <h2 class="display-6 fw-medium mb-0">Employement <span class="text-gradient">History</span></h2>
                         </div>
-                        <div class="col-12 col-xl-7">
-                            <div class="row g-4">
-                                <!-- Service box 1 -->
-                                <div class="col-12">
-                                     <div class="service-box">
-                                        <div class="service-order">
-                                            <h3> <i class="bi bi-arrow-right-square"></i></h3>
-                                        </div>
-                                        <div class="service-title">
-                                           <div Class="d-block">
-										   <h3>Web Assistance & Designer</h3>
-										     <span> Radar One Media Ltd</span>
-						</div>
-                                        </div>
-                                        <div class="service-text">
-                                            <p><span>April 2023 - January, 2024</span></br>
-											Brighton, UK
-                                            </p>
-                                        </div>
-                                    </div>
-									
+                        <ul class="timeline">
+                            <li class="timeline-event">
+                                <label class="timeline-event-icon"></label>
+                                <div class="timeline-event-copy">
+                                    <p class="timeline-event-thumbnail">April 2023 - January, 2024</p>
+                                    <h3>Web Assistance & Designer</h3>
+                                    <h4>Radar One Media Ltd, Brighton, UK</h4>
+                                    <ul>
+                                        <li>Updated and maintained WordPress plugins and themes to ensure optimal website performance and security. Implemented regular updates and security patches to safeguard against vulnerabilities.</li> 
+                                        <li>Customized layouts and stylesheets to improve user experience and maintain visually appealing websites. Implemented responsive design principles to ensure compatibility across various devices and screen sizes.</li> 
+                                        <li>Assisted with ad placement, SEO strategies, and social media management to enhance online presence and reach. Implemented SEO best practices to improve website visibility and drive organic traffic.</li> 
+                                        <li>Monitored website performance, identified and troubleshooted issues, and provided timely solutions. Implemented optimizations to enhance website speed, usability, and overall performance.</li>
+                                    </ul>
                                 </div>
-                                <!-- Service box 2 -->
-                                <div class="col-12">
-                                    <div class="service-box">
-                                        <div class="service-order">
-                                            <h3> <i class="bi bi-arrow-right-square"></i></h3>
-                                        </div>
-                                        <div class="service-title">
-                                           <div Class="d-block">
-										   <h3>Web Designer</h3>
-										   <span>Treble-D Solutions</span>
-						</div>
-                                        </div>
-                                        <div class="service-text">
-                                            <p><span>April 2022 - December 2022</span></br>
-											India
-                                            </p>
-                                        </div>
-                                    </div>
+                            </li>
+                            <li class="timeline-event">
+                                <label class="timeline-event-icon"></label>
+                                <div class="timeline-event-copy">
+                                    <p class="timeline-event-thumbnail">April 2022 - December 2022</p>
+                                    <h3>Web Designer</h3>
+                                    <h4>Treble-D Solutions, India</h4>
+                                    <ul>
+                                        <li>Enhanced web design and usability through UX testing.</li>
+                                        <li>Designed and delivered websites with clean design and optimised performance.</li>
+                                        <li>Worked collaboratively to implement user feedback, refining website functionality for optimal performance</li>
+                                        <li>Maintained high standards in web development, focusing on responsive design and cross-browser compatibility</li>
+                                    </ul>
                                 </div>
-                                <!-- Service box 3 -->
-                                <div class="col-12">
-                                    <div class="service-box">
-                                        <div class="service-order">
-                                            <h3> <i class="bi bi-arrow-right-square"></i></h3>
-                                        </div>
-                                        <div class="service-title">
-                                           <div Class="d-block">
-										   <h3>Web Designer & Developer</h3>
-										   <span>Kushub Media Solution Pvt Ltd </span>
-						</div>
-                                        </div>
-                                        <div class="service-text">
-                                            <p><span>January 2019 - March 2021</span></br>
-											India
-                                            </p>
-                                        </div>
-                                    </div>
+                            </li>
+                            <li class="timeline-event">
+                                <label class="timeline-event-icon"></label>
+                                <div class="timeline-event-copy">
+                                    <p class="timeline-event-thumbnail">January 2019 - March 2021</p>
+                                    <h3>Web Designer & Developer</h3>
+                                    <h4>Kushub Media Solution Pvt Ltd, India</h4>
+                                    <ul>
+                                        <li>Collaborated to identify bugs and ensure smooth website functionality</li>
+                                        <li>Implemented daily backup and recovery plans for websites, ensuring data integrity.</li>
+                                        <li>Spearheaded efforts to optimise web development processes, prioritising responsive design and ensuring compatibility across various browsers.</li>
+                                        <li>Planned websites strategically to effectively showcase multimedia content, optimising user visual and interactive experience.</li>
+                                    </ul>
                                 </div>
-                                <!-- end Service box 3 -->
-								<!-- Service box 4 -->
-                                <div class="col-12">
-                                    <div class="service-box">
-                                        <div class="service-order">
-                                            <h3> <i class="bi bi-arrow-right-square"></i></h3>
-                                        </div>
-                                        <div class="service-title">
-                                           <div Class="d-block">
-										   <h3>Web & Graphic Designer</h3>
-										   <span>Midriff Info Solution</span>
-						</div>
-                                        </div>
-                                        <div class="service-text">
-                                            <p><span>January 2016 - December 2018</span></br>
-											India
-                                            </p>
-                                        </div>
-                                    </div>
+                            </li>
+                            <li class="timeline-event">
+                                <label class="timeline-event-icon"></label>
+                                <div class="timeline-event-copy">
+                                    <p class="timeline-event-thumbnail">January 2016 - December 2018</p>
+                                    <h3>Web & Graphic Designer</h3>
+                                    <h4>Midriff Info Solution, India</h4>
+                                    <ul>
+                                        <li>Crafted beautiful, highly effective web pages that performed brilliantly on mobile tablet and desktop.</li>
+                                        <li>Contributed to backend experience with developers, enhancing overall website functionality.</li>
+                                        <li>Utilised design software and tools, such as Adobe Photoshop, to execute design projects efficiently.</li>
+                                        <li>Provided ongoing technical advice and support to the team on website related issues, promptly resolving problems by finding ideal solutions.</li>
+                                    </ul>
                                 </div>
-                                <!-- end Service box 4 -->
-                            </div>
-                            <!-- end row(inner) -->
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                     <!-- end row -->
                 </div>
                 <!-- end container -->
-            </div>
-            <!-- end Services section -->
-            <!-- Clients section -->
-            <div class="section pt-0">
-                <div class="container">
-                    <div class="swiper clients-slider swiper-initialized swiper-horizontal swiper-backface-hidden">
-                        <div class="swiper-wrapper" id="swiper-wrapper-73bc26e59582f5ea" aria-live="polite">
-                            <!-- Slider Item 1 -->
-                            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6" style="width: 216px; margin-right: 50px;">
-                                <div class="client-box">
-                                    <a href="#">
-                                    <img src="images/logo1.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Slider Item 2 -->
-                            <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6" style="width: 216px; margin-right: 50px;">
-                                <div class="client-box">
-                                    <a href="#">
-                                    <img src="images/logo2.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Slider Item 3 -->
-                            <div class="swiper-slide" role="group" aria-label="3 / 6" style="width: 216px; margin-right: 50px;">
-                                <div class="client-box">
-                                    <a href="#">
-                                    <img src="images/logo3.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Slider Item 4 -->
-                            <div class="swiper-slide" role="group" aria-label="4 / 6" style="width: 216px; margin-right: 50px;">
-                                <div class="client-box">
-                                    <a href="#">
-                                    <img src="images/logo4.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Slider Item 5 -->
-                            <div class="swiper-slide" role="group" aria-label="5 / 6" style="width: 216px; margin-right: 50px;">
-                                <div class="client-box">
-                                    <a href="#">
-                                    <img src="images/logo5.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Slider Item 6 -->
-                            <div class="swiper-slide" role="group" aria-label="6 / 6" style="width: 216px; margin-right: 50px;">
-                                <div class="client-box">
-                                    <a href="#">
-                                    <img src="images/logo6.jpg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- end Slider Item 6 -->
-                        </div>
-                        <!-- end swiper-wrapper -->
-                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                    </div>
-                    <!-- end clients-slider -->
-                </div>
-                <!-- end container -->
-            </div>
-            <!-- end Clients section -->
+            </section>
+            <!-- end Employement section -->
             <!-- Portfolio section -->
-            <div id="portfolio" class="section-box">
+            <section id="portfolio" class="section-box">
                 <div class="section-sm bg-dark border-radius-1">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12">
-                                <span class="title-heading text-white-04">Portfolio</span>
-                                <h1 class="display-3 fw-medium">Recent <span class="text-gradient">Works</span></h1>
-                                <p>Explore my portfolio to see a snapshot of my creative journey and the projects that highlight my skills and expertise.
-                                </p>
+                            <div class="col-12"> 
+                                <h2 class="display-3 fw-medium">My <span class="text-gradient">Works</span></h2>
+                                <p>Browse through my portfolio to see how I have transformed concepts into visually stunning and high-performing websites. </p>
                             </div>
                         </div>
-						
-						
-						
-						
-						<div Class="row">
-						<!-- Start: Portfolio coloumn -->
-							<div Class="col-sm-6">
-							<div class="portfolio-box mt-4">
-                                        <!-- Image -->
-                                        <div class="portfolio-img">
-                                            <a href="portfolio-single.html">
-                                            <img src="images/portfolio-1.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="pt-4">
-                                            <!-- Categories -->
-                                            <ul class="list-inline-dot sm-heading text-white mb-2">
-                                                <li>
-                                                    <a class="link-hover" href="#">
-                                                    <span data-text="Visual Art">Visual Art</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="link-hover" href="#">
-                                                    <span data-text="Concept">Concept</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <!-- Caption -->
-                                            <h2>
-                                                <a class="portfolio-caption" href="portfolio-single.html">
-                                                <i class="bi bi-arrow-right"></i>
-                                                Fold Twist Abstract
-                                                </a>
-                                            </h2>
-                                        </div>
+                        <div Class="row">
+                            <!-- Start: Portfolio coloumn -->
+                            <div Class="col-sm-6">
+                                <div class="portfolio-box mt-4">
+                                    <!-- Image -->
+                                    <div class="portfolio-img">
+                                        <a href="solarenergy.html">
+                                            <img src="images/portfolio1.png" alt="solarenergy portfolio" />
+                                        </a>
                                     </div>
-                                    <!-- end portfolio-box -->
-							</div><!-- END: Portfolio coloumn -->
-							<!-- Start: Portfolio coloumn -->
-							<div Class="col-sm-6">
-							<div class="portfolio-box mt-4">
-                                        <!-- Image -->
-                                        <div class="portfolio-img">
-                                            <a href="portfolio-single.html">
-                                            <img src="images/portfolio-2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="pt-4">
-                                            <!-- Categories -->
-                                            <ul class="list-inline-dot sm-heading text-white mb-2">
-                                                <li>
-                                                    <a class="link-hover" href="#">
-                                                    <span data-text="Visual Art">Visual Art</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="link-hover" href="#">
-                                                    <span data-text="Concept">Concept</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <!-- Caption -->
-                                            <h2>
-                                                <a class="portfolio-caption" href="portfolio-single.html">
-                                                <i class="bi bi-arrow-right"></i>
-                                                Fold Twist Abstract
-                                                </a>
-                                            </h2>
-                                        </div>
+                                    <div class="pt-4">
+                                        <!-- Categories -->
+                                        <ul class="list-inline-dot sm-heading text-white mb-2">
+                                            <li>
+                                                <span class="link-hover">
+                                                    <span data-text="App Design">App Design</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="link-hover" >
+                                                    <span data-text="UX/UI">UX/UI</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <!-- Caption -->
+                                        <h2>
+                                            <a class="portfolio-caption" href="solarenergy.html">
+                                                <i class="bi bi-arrow-right"></i> Solar Energy App </a>
+                                        </h2>
                                     </div>
-                                    <!-- end portfolio-box -->
-							</div><!-- END: Portfolio coloumn -->
-							<!-- Start: Portfolio coloumn -->
-							<div Class="col-sm-6 mt-4">
-							<div class="portfolio-box">
-                                        <!-- Image -->
-                                        <div class="portfolio-img">
-                                            <a href="portfolio-single.html">
-                                            <img src="images/portfolio-2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="pt-4">
-                                            <!-- Categories -->
-                                            <ul class="list-inline-dot sm-heading text-white mb-2">
-                                                <li>
-                                                    <a class="link-hover" href="#">
-                                                    <span data-text="Visual Art">Visual Art</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="link-hover" href="#">
-                                                    <span data-text="Concept">Concept</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <!-- Caption -->
-                                            <h2>
-                                                <a class="portfolio-caption" href="portfolio-single.html">
-                                                <i class="bi bi-arrow-right"></i>
-                                                Fold Twist Abstract
-                                                </a>
-                                            </h2>
-                                        </div>
+                                </div>
+                                <!-- end portfolio-box -->
+                            </div>
+                            <!-- END: Portfolio coloumn -->
+                            <!-- Start: Portfolio coloumn -->
+                            <div Class="col-sm-6">
+                                <div class="portfolio-box mt-4">
+                                    <!-- Image -->
+                                    <div class="portfolio-img">
+                                        <a href="sports.html">
+                                            <img src="images/portfolio-22.png" alt="sports web portfolio" />
+                                        </a>
                                     </div>
-                                    <!-- end portfolio-box -->
-							</div><!-- END: Portfolio coloumn -->
-							<!-- Start: Portfolio coloumn -->
-							<div Class="col-sm-6 mt-4">
-							<div class="portfolio-box">
-                                        <!-- Image -->
-                                        <div class="portfolio-img">
-                                            <a href="portfolio-single.html">
-                                            <img src="images/portfolio-2.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="pt-4">
-                                            <!-- Categories -->
-                                            <ul class="list-inline-dot sm-heading text-white mb-2">
-                                                <li>
-                                                    <a class="link-hover" href="#">
-                                                    <span data-text="Visual Art">Visual Art</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="link-hover" href="#">
-                                                    <span data-text="Concept">Concept</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <!-- Caption -->
-                                            <h2>
-                                                <a class="portfolio-caption" href="portfolio-single.html">
-                                                <i class="bi bi-arrow-right"></i>
-                                                Fold Twist Abstract
-                                                </a>
-                                            </h2>
-                                        </div>
+                                    <div class="pt-4">
+                                        <!-- Categories -->
+                                        <ul class="list-inline-dot sm-heading text-white mb-2">
+                                            <li>
+                                                <span class="link-hover">
+                                                    <span data-text="HTML">HTML</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="link-hover">
+                                                    <span data-text="Pixel Perfect">Pixel Perfect</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <!-- Caption -->
+                                        <h2>
+                                            <a class="portfolio-caption" href="sports.html">
+                                                <i class="bi bi-arrow-right"></i> PSD to HTML </a>
+                                        </h2>
                                     </div>
-                                    <!-- end portfolio-box -->
-							</div><!-- END: Portfolio coloumn -->
-							
-						</div>
-						
+                                </div>
+                                <!-- end portfolio-box -->
+                            </div>
+                            <!-- END: Portfolio coloumn -->
+                            <!-- Start: Portfolio coloumn -->
+                            <div Class="col-sm-6 mt-4">
+                                <div class="portfolio-box">
+                                    <!-- Image -->
+                                    <div class="portfolio-img">
+                                        <a href="dashboard.html">
+                                            <img src="images/portfolio-44.png" alt="dashboard portfolio" />
+                                        </a>
+                                    </div>
+                                    <div class="pt-4">
+                                        <!-- Categories -->
+                                        <ul class="list-inline-dot sm-heading text-white mb-2">
+                                            <li>
+                                                 <span class="link-hover">
+                                                    <span data-text="HTML">HTML</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                 <span class="link-hover">
+                                                    <span data-text="CSS">CSS</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <a class="link-hover" href="#">
+                                                    <span data-text="Bootstrap">Bootstrap</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- Caption -->
+                                        <h2>
+                                            <a class="portfolio-caption" href="dashboard.html">
+                                                <i class="bi bi-arrow-right"></i> Dashboard Design </a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <!-- end portfolio-box -->
+                            </div>
+                            <!-- END: Portfolio coloumn -->
+                            <!-- Start: Portfolio coloumn -->
+                            <div Class="col-sm-6 mt-4">
+                                <div class="portfolio-box">
+                                    <!-- Image -->
+                                    <div class="portfolio-img">
+                                        <a href="healthapp.html">
+                                            <img src="images/portfolio-33.png" alt="healthapp portfolio" />
+                                        </a>
+                                    </div>
+                                    <div class="pt-4">
+                                        <!-- Categories -->
+                                        <ul class="list-inline-dot sm-heading text-white mb-2">
+                                            <li>
+                                                 <span class="link-hover">
+                                                    <span data-text="UX/UI">UX/UI</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                 <span class="link-hover">
+                                                    <span data-text="App Design">App Design</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <!-- Caption -->
+                                        <h2>
+                                            <a class="portfolio-caption" href="healthapp.html">
+                                                <i class="bi bi-arrow-right"></i> Health App </a>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <!-- end portfolio-box -->
+                            </div>
+                            <!-- END: Portfolio coloumn -->
+							 <div Class="col-sm-12 mt-4 text-center">
+								<a href="portfolio.html" class="button button-sm button-dot button-white">
+									<span data-text="View More">View More</span>
+								</a>
+							</div>
+                        </div>
                         <!-- end row -->
                     </div>
                     <!-- end container -->
                 </div>
-            </div>
+            </section>
             <!-- end Portfolio section -->
-            <!-- Awards section -->
-            <div id="awards" class="section pb-0">
+			 <!-- Education section -->
+            <section Class="education_sec">
+                <div class="container">
+					 <div class="row g-4 g-xl-5 mt_3">
+                        <div class="col-12 col-xl-12">
+                            <h2 class="display-6 fw-medium mb-0">Educational <span class="text-gradient">Qualification</span>
+                            </h2>
+                        </div>
+                        <ul class="timeline">
+                            <li class="timeline-event">
+                                <label class="timeline-event-icon"></label>
+                                <div class="timeline-event-copy">
+                                    <p class="timeline-event-thumbnail">January 2023 - June 2024</p>
+                                    <h3>MSc in User Experience Design</h3>
+                                    <h4 class="mb-0">University of Brighton, Brighton, UK</h4>
+                                </div>
+                            </li>
+                            <li class="timeline-event">
+                                <label class="timeline-event-icon"></label>
+                                <div class="timeline-event-copy">
+                                    <p class="timeline-event-thumbnail">2011 - 2014</p>
+                                    <h3>Diploma - 3 Years Diploma in Computer Science</h3>
+                                    <h4 class="mb-0">Kalpana Chawla Govt Polytechnic for Women - India</h4>
+                                </div>
+                            </li>
+							<li class="timeline-event">
+                                <label class="timeline-event-icon"></label>
+                                <div class="timeline-event-copy">
+                                    <p class="timeline-event-thumbnail">2009 - 2012</p>
+                                    <h3>Bachelor of Arts</h3>
+                                    <h4 class="mb-0">Kurukshetra University - Bachelor of Arts - India</h4>
+                                  </div>
+                            </li>
+							<li class="timeline-event">
+                                <label class="timeline-event-icon"></label>
+                                <div class="timeline-event-copy">
+                                    <p class="timeline-event-thumbnail">2014 - 2015</p>
+                                    <h3>Web Designing/Graphic Designing — Training</h3>
+                                    <h4 class="mb-0">Oops Info Solutions Pvt Ltd. - India</h4>
+                                  </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end Education section -->
+            <!-- Skills section -->
+            <section class="section pb-0">
                 <div class="container">
                     <div class="row g-4 g-xl-5">
                         <div class="col-12 col-xl-4">
-                            <span class="title-heading text-white-04">Achievements</span>
-                            <h1 class="display-3 fw-medium mb-0">Awa<span class="text-gradient">rds</span></h1>
+                            <h2 class="display-3 fw-medium mb-0">My <span class="text-gradient">Skills</span>
+                            </h2>
                         </div>
                         <div class="col-12 col-xl-8">
+                            <div class="skills">
+                                <div class="charts">
+                                    <div class="chart chart--dev">
+                                        <ul class="chart--horiz">
+                                            <li class="chart__bar" style="width: 98%;">
+                                                <span class="chart__label"> HTML5 </span>
+                                            </li>
+                                            <li class="chart__bar" style="width: 98%;">
+                                                <span class="chart__label"> CSS3 </span>
+                                            </li>
+                                            <li class="chart__bar" style="width: 85%;">
+                                                <span class="chart__label"> WordPress </span>
+                                            </li>
+                                            <li class="chart__bar" style="width: 80%;">
+                                                <span class="chart__label"> Adobe Photoshop </span>
+                                            </li>
+                                            <li class="chart__bar" style="width: 70%;">
+                                                <span class="chart__label"> UI/UX </span>
+                                            </li>
+                                            <li class="chart__bar" style="width: 60%;">
+                                                <span class="chart__label"> JavaScript </span>
+                                            </li>
+											<li class="chart__bar" style="width: 68%;">
+                                                <span class="chart__label"> ReactJS </span>
+                                            </li>
+                                            <li class="chart__bar" style="width: 70%;">
+                                                <span class="chart__label"> Shopify </span>
+                                            </li>
+                                            <li class="chart__bar" style="width: 85%;">
+                                                <span class="chart__label"> PSD to HTML </span>
+                                            </li>
+                                            <li class="chart__bar" style="width: 90%;">
+                                                <span class="chart__label"> PSD to WordPress </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end Skills section -->
+            <!-- Awards section -->
+            <section class="section pb-0">
+                <div class="container">
+                    <div class="row g-4 g-xl-5">
+                        <div class="col-12 col-xl-12">
+                            <h2 class="display-3 fw-medium mb-0">Achieve<span class="text-gradient">ments</span>
+                            </h2>
+                        </div>
+                        <div class="col-12 col-xl-12">
                             <div class="row g-4">
                                 <!-- Award box 1 -->
                                 <div class="col-12 col-md-6">
                                     <div class="fancy-box">
-                                        <h4>Best Designer of the Month</h4>
-                                        <h6 class="sm-heading text-white-04 mb-2">2023</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore
-                                        </p>
+										<span class="button-circle mb-3">
+											<i class="bi bi-trophy"></i>
+											<i class="bi bi-trophy"></i>
+										</span>
+                                        <h4>Employee of the Month</h4>
+                                        <h6 class="sm-heading text-white-04 mb-2">Midriff Info Solution - 2018</h6>
+                                        <p>Recognized as the "Employee of the Month" for consistently demonstrating exceptional performance, dedication, and contribution to team success. </p>
                                     </div>
                                 </div>
                                 <!-- Award box 2 -->
                                 <div class="col-12 col-md-6">
                                     <div class="fancy-box">
-                                        <h4>The True Gem</h4>
-                                        <h6 class="sm-heading text-white-04 mb-2">2023</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et
-                                        </p>
+									<span class="button-circle mb-3">
+											<i class="bi bi-trophy"></i>
+											<i class="bi bi-trophy"></i>
+										</span>
+                                        <h4>Team Player</h4>
+                                        <h6 class="sm-heading text-white-04 mb-2">Treble-D Solutions - 2022 </h6>
+                                        <p>Acknowledged for exceptional teamwork skills, consistently supporting colleagues and contributing to team success. Proactively engaged in collaborative efforts, fostering a positive work environment.</p>
                                     </div>
                                 </div>
-                                <!-- Award box 3 -->
-                                <div class="col-12 col-md-6">
-                                    <div class="fancy-box">
-                                        <h4>First Class Performer</h4>
-                                        <h6 class="sm-heading text-white-04 mb-2">2022</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- Award box 4 -->
-                                <div class="col-12 col-md-6">
-                                    <div class="fancy-box">
-                                        <h4>Customers Favourite</h4>
-                                        <h6 class="sm-heading text-white-04 mb-2">2021</h6>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- end Award box 4 -->
+                               
                             </div>
                             <!-- end row(inner) -->
                         </div>
@@ -541,15 +475,41 @@
                     <!-- end row -->
                 </div>
                 <!-- end container -->
-            </div>
+            </section>
             <!-- end Awards section -->
+			<!-- Volunteer section -->
+            <section class="section pb-0">
+                <div class="container">
+                    <div class="row g-4 g-xl-5">
+                        <div class="col-12 col-xl-12">
+                            <h2 class="display-3 fw-medium mb-0">Voluntee<span class="text-gradient">ring</span>
+                            </h2>
+                        </div>
+						 <div class="col-12 col-md-12 mt-4">
+                                    <div class="fancy-box">
+										 <h3>Volunteer - Ladies That UX Brighton | Brighton, UK </h3>
+                                        <h6 class="sm-heading text-white-04 mb-2">November 2023 - Present</h6>
+										<ul>
+											<li>Enhanced website functionality by implementing new features and optimising existing ones.</li>
+											<li>Managed in-person event registrations, ensuring a seamless and efficient check-in process.</li>
+											<li>Assisted in content updates and promptly addressed design issues to enhance visual appeal and functionality.</li>
+										</ul>
+                                    </div>
+                                </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end Volunteer section -->
             <!-- Contact section -->
-            <div id="contact" class="section pb-0">
+            <section id="contact" class="section pb-0">
                 <div class="container">
                     <div class="row g-4 g-xl-5">
                         <div class="col-12 col-xl-4">
                             <span class="title-heading text-white-04">Contact</span>
-                            <h1 class="display-3 fw-medium mb-0">Let's <span class="text-gradient">Talk</span></h1>
+                            <h2 class="display-3 fw-medium mb-0">Let's <span class="text-gradient">Talk</span>
+                            </h2>
                         </div>
                         <div class="col-12 col-xl-8">
                             <div class="row g-4 g-lg-5">
@@ -564,16 +524,16 @@
                                 <form method="post" id="contactform">
                                     <div class="row gx-3 gy-0">
                                         <div class="col-12 col-md-6">
-                                            <input type="text" id="name" name="name" placeholder="Name" required="">
+                                            <input type="text" id="name" name="name" placeholder="Name" required="" />
                                         </div>
                                         <div class="col-12 col-md-6">
-                                            <input type="email" id="email" name="email" placeholder="E-Mail" required="">
+                                            <input type="email" id="email" name="email" placeholder="E-Mail" required="" />
                                         </div>
                                     </div>
-                                    <input type="text" id="subject" name="subject" placeholder="Subject" required="">
+                                    <input type="text" id="subject" name="subject" placeholder="Subject" required="" />
                                     <textarea name="message" id="message" placeholder="Message"></textarea>
                                     <button class="button button-dot" type="submit">
-                                    <span data-text="Send Message">Send Message</span>
+                                        <span data-text="Send Message">Send Message</span>
                                     </button>
                                 </form>
                                 <!-- Submit result -->
@@ -588,46 +548,94 @@
                     <!-- end row -->
                 </div>
                 <!-- end container -->
-            </div>
+            </section>
             <!-- end Contact section -->
         </main>
         <!-- Footer -->
-        <div class="py-4 py-lg-5 text-center">
+		<footer Class="border-top mt-4">
+	  <div class="py-4 py-lg-5 text-center">
             <p>© 2024 Reena Rani, All Rights Reserved.</p>
+			<ul Class="social_icons ps-0 mt-3">
+				<li>
+					<a class="button-circle" href="https://www.behance.net/sainireena480c">
+					  <i class="bi bi-behance"></i>
+					  <i class="bi bi-behance"></i>
+                    </a>
+				</li>
+				<li>
+					<a class="button-circle" href="https://www.linkedin.com/in/ranireena/">
+					   <i class="bi bi-linkedin"></i>
+					   <i class="bi bi-linkedin"></i>
+                    </a>
+				</li>
+				<li>
+					<a class="button-circle" href="https://twitter.com/Reena3041">
+					   <i class="bi bi-twitter-x"></i>
+					   <i class="bi bi-twitter-x"></i>
+                    </a>
+				</li>
+			</ul>
         </div>
+		</footer>
         <!-- end Footer -->
         <!-- Scroll To Top -->
         <div class="scrolltotop show">
             <a class="button-circle" href="#">
-            <i class="bi bi-arrow-up"></i>
-            <i class="bi bi-arrow-up"></i>
+                <i class="bi bi-arrow-up"></i>
+                <i class="bi bi-arrow-up"></i>
             </a>
         </div>
         <!-- end Scroll To Top -->
         <!-- JavaScripts -->
         <script src="js/jquery.min.js"></script>
-        <script src="js/plugins.js"></script>
         <script src="js/functions.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".clients-slider", {
-               slidesPerView: 5,
-              loop: true,
-            autoHeight: true,
-              spaceBetween: 50,
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-            });
-            
-        </script>
-        <div class="preloader">
-            <div><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span></div>
-        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> 
+		<script>
+		const mHTML = document.getElementById('message'),
+messages = [
+  'Web Designer.',
+  'UI/UX Designer',
+  'Frontend Designer'
+];
+let currentMessage = 0;
+function typeMessage() {
+  if (!messages[currentMessage]) {
+    currentMessage = 0;
+  }
+  const currentStr = messages[currentMessage];
+  currentStr.split();
+  let part = '';
+  let currentLetter = 0;
+  let int1 = setInterval(()=>{
+    if (!currentStr[currentLetter]) {
+      currentMessage++;
+      setTimeout(()=>{
+        deleteMessage(part);
+      }, 500);
+      clearInterval(int1);
+    } else {
+      part += currentStr[currentLetter++];
+      mHTML.innerHTML = part;
+    }
+  }, 150);
+}
+function deleteMessage(str) {
+  let int = setInterval(()=>{
+    if (str.length === 0) {
+      setTimeout(()=>{
+        typeMessage();
+      }, 500);
+      clearInterval(int);
+    } else {
+      str = str.split('');
+      str.pop();
+      str = str.join('');
+      mHTML.innerHTML = str;
+    }
+  },50);
+}
+typeMessage();
+		</script>
     </body>
