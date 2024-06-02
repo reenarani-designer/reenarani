@@ -1543,3 +1543,7 @@ a:focus,a:active,button:focus,button:active {
 		    padding-left: 0rem;
 	}
 }
+/**SLick SLider */
+.slick-slide{
+    padding: 10px !important;
+}
