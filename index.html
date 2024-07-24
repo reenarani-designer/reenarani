@@ -36,9 +36,7 @@
     <script type="text/javascript">
         (function() { 
             emailjs.init({
-              publicKey: "xuGqxaUlvyes7vxwc",
-                template_id: 'template_s5ju2sq',
-                service_id: 'service_deyi0du',
+              publicKey: "xuGqxaUlvyes7vxwc", 
             });
         })();
     </script>
@@ -47,12 +45,14 @@
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
+                emailjs.send('service_deyi0du', 'template_s5ju2sq', templateParams).then(
+                  (response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                      },
+                      (error) => {
+                      console.log('FAILED...', error);
+                  },
+                );
             });
         }
     </script>
