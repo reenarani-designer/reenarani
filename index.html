@@ -37,7 +37,6 @@
         (function() { 
             emailjs.init({
               publicKey: "xuGqxaUlvyes7vxwc",
-                template_id: 'template_s5ju2sq',
             });
         })();
     </script>
@@ -46,7 +45,7 @@
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // these IDs from the previous steps
-                emailjs.sendForm('service_deyi0du','contact_form', this)
+                emailjs.sendForm('service_deyi0du','template_s5ju2sq', this)
                     .then(() => {
                         console.log('SUCCESS!');
                     }, (error) => {
